@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Grand Axis Business | حلول الأعمال والاستيراد في الجزائر</title>
+
+  <meta
+    name="description"
+    content="Grand Axis Business يقدم خدمات الاستيراد، السيارات، العقارات، التأشيرات، دراسة المشاريع، والوساطة التجارية في الجزائر."
+  />
+
+  <meta name="theme-color" content="#0b1f35" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --navy: #0b1f35;
+      --navy-light: #123653;
+      --gold: #c99a45;
+      --gold-light: #e6c47b;
+      --white: #ffffff;
+      --light: #f5f7fa;
+      --text: #243447;
+      --muted: #687789;
+      --border: #e5eaf0;
+      --shadow: 0 15px 45px rgba(11, 31, 53, 0.1);
+      --radius: 18px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Cairo", sans-serif;
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    .section {
+      padding: 90px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .section-title span {
+      color: var(--gold);
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    .section-title h2 {
+      color: var(--navy);
+      font-size: clamp(28px, 4vw, 42px);
+      margin: 8px 0 12px;
+    }
+
+    .section-title p {
+      max-width: 680px;
+      margin: auto;
+      color: var(--muted);
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid rgba(229, 234, 240, 0.8);
+      backdrop-filter: blur(12px);
+    }
+
+    .navbar {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--navy);
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .logo-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--gold), #a87528);
+      color: white;
+      font-size: 22px;
+    }
+
+    .logo small {
+      display: block;
+      color: var(--gold);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      list-style: none;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .menu-btn {
+      display: none;
+      background: none;
+      border: 0;
+      font-size: 28px;
+      color: var(--navy);
+      cursor: pointer;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 22px;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      font-family: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #ae7c2d;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border-color: var(--gold);
+      color: var(--gold);
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background: var(--gold);
+      color: white;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 720px;
+      display: flex;
+      align-items: center;
+      padding-top: 120px;
+      background:
+        linear-gradient(90deg, rgba(11, 31, 53, 0.98), rgba(11, 31, 53, 0.78)),
+        url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .hero-label {
+      color: var(--gold-light);
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      font-size: clamp(35px, 6vw, 68px);
+      line-height: 1.25;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 em {
+      color: var(--gold-light);
+      font-style: normal;
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: #e8eef5;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .hero .btn-outline {
+      color: white;
+      border-color: rgba(255, 255, 255, 0.65);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 55px;
+    }
+
+    .hero-stats strong {
+      display: block;
+      color: var(--gold-light);
+      font-size: 27px;
+    }
+
+    .hero-stats span {
+      color: #dce5ed;
+      font-size: 13px;
+    }
+
+    /* Services */
+    .services {
+      background: var(--light);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 25px 20px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      transition: 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow);
+      border-color: var(--gold-light);
+    }
+
+    .service-icon {
+      width: 53px;
+      height: 53px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: #fff6e6;
+      color: var(--gold);
+      font-size: 25px;
+      margin-bottom: 17px;
+    }
+
+    .service-card h3 {
+      color: var(--navy);
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* About */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-image {
+      min-height: 430px;
+      border-radius: 25px;
+      background:
+        linear-gradient(rgba(11, 31, 53, 0.2), rgba(11, 31, 53, 0.2)),
+        url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=85")
+        center/cover;
+      box-shadow: var(--shadow);
+    }
+
+    .about-content h2 {
+      color: var(--navy);
+      font-size: 36px;
+      margin: 10px 0 18px;
+    }
+
+    .about-content p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .check-list {
+      list-style: none;
+      margin: 22px 0;
+    }
+
+    .check-list li {
+      margin: 11px 0;
+      font-weight: 600;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      color: var(--gold);
+      font-weight: 800;
+      margin-left: 10px;
+    }
+
+    /* Process */
+    .process {
+      background: var(--navy);
+      color: white;
+    }
+
+    .process .section-title h2,
+    .process .section-title p {
+      color: white;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .process-card {
+      text-align: center;
+      padding: 25px 17px;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: var(--radius);
+    }
+
+    .process-number {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 14px;
+      border-radius: 50%;
+      background: var(--gold);
+      font-weight: 800;
+    }
+
+    .process-card h3 {
+      margin-bottom: 7px;
+    }
+
+    .process-card p {
+      color: #cfdae4;
+      font-size: 14px;
+    }
+
+    /* Request */
+    .request {
+      background: var(--light);
+    }
+
+    .request-box {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 40px;
+      align-items: start;
+      background: white;
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: var(--shadow);
+    }
+
+    .request-info h2 {
+      color: var(--navy);
+      font-size: 32px;
+      margin: 10px 0 15px;
+    }
+
+    .request-info p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .contact-line {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin: 14px 0;
+      font-weight: 600;
+    }
+
+    .contact-line span {
+      color: var(--gold);
+      font-size: 22px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      outline: none;
+      font: inherit;
+      color: var(--text);
+      background: white;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(201, 154, 69, 0.12);
+    }
+
+    textarea {
+      min-height: 125px;
+      resize: vertical;
+    }
+
+    .form-message {
+      display: none;
+      color: #147a45;
+      background: #e9f8ef;
+      padding: 12px;
+      border-radius: 8px;
+      margin-top: 14px;
+      font-size: 14px;
+    }
+
+    /* CTA */
+    .cta {
+      text-align: center;
+      background: linear-gradient(135deg, var(--gold), #9c6b21);
+      color: white;
+    }
+
+    .cta h2 {
+      font-size: clamp(27px, 4vw, 42px);
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      margin-bottom: 22px;
+    }
+
+    .cta .btn {
+      background: var(--navy);
+    }
+
+    /* Footer */
+    footer {
+      background: #071523;
+      color: white;
+      padding: 55px 0 20px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 35px;
+    }
+
+    footer h3 {
+      margin-bottom: 15px;
+      color: var(--gold-light);
+    }
+
+    footer p,
+    footer li,
+    footer a {
+      color: #bdc9d5;
+      font-size: 14px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin: 8px 0;
+    }
+
+    footer a:hover {
+      color: var(--gold-light);
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      padding-top: 18px;
+      text-align: center;
+      color: #99a8b6;
+      font-size: 13px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      left: 20px;
+      bottom: 20px;
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #25d366;
+      color: white;
+      font-size: 29px;
+      z-index: 900;
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.35);
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-grid,
+      .request-box {
+        grid-template-columns: 1fr;
+      }
+
+      .about-image {
+        min-height: 300px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .section {
+        padding: 65px 0;
+      }
+
+      .navbar {
+        min-height: 68px;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: 68px;
+        right: 0;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: white;
+        padding: 15px 6%;
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links li {
+        padding: 12px 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .navbar > .btn {
+        display: none;
+      }
+
+      .hero {
+        min-height: 680px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .hero-stats {
+        gap: 22px;
+        margin-top: 38px;
+      }
+
+      .services-grid,
+      .process-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-group.full {
+        grid-column: auto;
+      }
+
+      .request-box {
+        padding: 25px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container navbar">
+      <a href="#home" class="logo">
+        <span class="logo-mark">G</span>
+        <span>
+          Grand Axis
+          <small>BUSINESS</small>
+        </span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#services">خدماتنا</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#process">طريقة العمل</a></li>
+        <li><a href="#request">اطلب خدمة</a></li>
+      </ul>
+
+      <a href="#request" class="btn btn-primary">احجز استشارة</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-label">Grand Axis Business</div>
+
+          <h1>
+            حلول أعمال متكاملة
+            <em>تفتح لكم أبواب الفرص</em>
+          </h1>
+
+          <p>
+            نساعد الأفراد والشركات والمستثمرين على الوصول إلى حلول عملية
+            في التجارة، السيارات، العقارات، التأشيرات، دراسة المشاريع
+            والشراكات الدولية.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#request" class="btn btn-primary">اطلب خدمتك الآن</a>
+            <a href="#services" class="btn btn-outline">اكتشف خدماتنا</a>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <strong>حلول</strong>
+              <span>متعددة ومتكاملة</span>
+            </div>
+            <div>
+              <strong>شراكات</strong>
+              <span>محلية ودولية</span>
+            </div>
+            <div>
+              <strong>متابعة</strong>
+              <span>واضحة واحترافية</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-title">
+          <span>ماذا نقدم؟</span>
+          <h2>خدمات مصممة لتسهيل أعمالكم</h2>
+          <p>
+            اختر الخدمة التي تحتاجها وأرسل طلبك، وسيتواصل معك فريقنا
+            لفهم احتياجاتك وتقديم التوجيه المناسب.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card">
+            <div class="service-icon">🌍</div>
+            <h3>الاستيراد والتصدير</h3>
+            <p>المساعدة في البحث عن المنتجات والموردين والفرص التجارية المناسبة.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🚗</div>
+            <h3>السيارات</h3>
+            <p>خدمات الوساطة في بيع وشراء وكراء السيارات حسب المواصفات والميزانية.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">✈️</div>
+            <h3>الفيزا والتأشيرات</h3>
+            <p>إرشاد ومرافقة في تجهيز الملفات وفهم الإجراءات المطلوبة.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">💼</div>
+            <h3>دراسة المشاريع</h3>
+            <p>تحليل فكرة المشروع ودراسة السوق واقتراح خطوات عملية للتنفيذ.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🤝</div>
+            <h3>الوساطة التجارية والمالية</h3>
+            <p>المساعدة في الوصول إلى شركاء وجهات مناسبة حسب طبيعة المشروع.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">💡</div>
+            <h3>حلول الأعمال</h3>
+            <p>تحليل المشاكل التجارية والإدارية واقتراح حلول واضحة وقابلة للتطبيق.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">💻</div>
+            <h3>الخدمات الإلكترونية</h3>
+            <p>التعريف بالخدمات الرقمية ومساعدة العملاء على فهم إجراءاتها.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🏢</div>
+            <h3>الخدمات العقارية</h3>
+            <p>وساطة في بيع وشراء وكراء العقارات حسب الموقع والميزانية.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-image"></div>
+
+        <div class="about-content">
+          <span class="hero-label">من نحن</span>
+          <h2>شريككم في الوصول إلى الحلول والفرص</h2>
+
+          <p>
+            Grand Axis Business مكتب أعمال متعدد الخدمات، يعمل على تسهيل
+            وصول الأفراد والشركات والمستثمرين إلى حلول عملية وشراكات موثوقة.
+          </p>
+
+          <p>
+            نؤمن بأن كل طلب يحتاج إلى فهم دقيق، متابعة واضحة، وتوجيه مناسب
+            يساعد العميل على اتخاذ القرار الأفضل.
+          </p>
+
+          <ul class="check-list">
+            <li>حلول مناسبة للأفراد والشركات</li>
+            <li>خدمات متنوعة في مكان واحد</li>
+            <li>متابعة مهنية وواضحة</li>
+            <li>انفتاح على الشراكات الدولية</li>
+          </ul>
+
+          <a href="#request" class="btn btn-primary">تواصل مع فريقنا</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section-title">
+          <span>طريقة العمل</span>
+          <h2>من الطلب إلى الحل</h2>
+          <p>
+            نعتمد خطوات واضحة لتسهيل تجربة العميل وتسريع دراسة الطلب.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card">
+            <div class="process-number">1</div>
+            <h3>أرسل طلبك</h3>
+            <p>شاركنا تفاصيل الخدمة أو المشكلة التي تحتاج إلى حلها.</p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-number">2</div>
+            <h3>دراسة الاحتياج</h3>
+            <p>نراجع المعلومات ونحدد الخيارات المناسبة لحالتك.</p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-number">3</div>
+            <h3>تقديم الحل</h3>
+            <p>نوضح لك الخطوات والتكاليف والمدة المتوقعة عند الإمكان.</p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-number">4</div>
+            <h3>المتابعة</h3>
+            <p>نرافقك خلال مراحل تنفيذ الخدمة حسب طبيعة الطلب.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Request Form -->
+    <section class="section request" id="request">
+      <div class="container request-box">
+
+        <div class="request-info">
+          <span class="hero-label">ابدأ الآن</span>
+          <h2>ما الخدمة التي تحتاجها؟</h2>
+
+          <p>
+            أرسل معلوماتك وسيتواصل معك فريق Grand Axis Business
+            لمراجعة طلبك وتقديم التوجيه المناسب.
+          </p>
+
+          <div class="contact-line">
+            <span>📞</span>
+            <a href="tel:+213000000000">+213 00 00 00 00</a>
+          </div>
+
+          <div class="contact-line">
+            <span>✉️</span>
+            <a href="mailto:contact@grandaxisbusiness.com">
+              contact@grandaxisbusiness.com
+            </a>
+          </div>
+
+          <div class="contact-line">
+            <span>📍</span>
+            <span>الجزائر</span>
+          </div>
+        </div>
+
+        <form id="requestForm">
+          <div class="form-grid">
+
+            <div class="form-group">
+              <label for="name">الاسم الكامل *</label>
+              <input id="name" type="text" required placeholder="أدخل اسمك" />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">رقم الهاتف *</label>
+              <input id="phone" type="tel" required placeholder="+213..." />
+            </div>
+
+            <div class="form-group">
+              <label for="email">البريد الإلكتروني</label>
+              <input id="email" type="email" placeholder="example@email.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="service">نوع الخدمة *</label>
+              <select id="service" required>
+                <option value="">اختر الخدمة</option>
+                <option>استيراد وتصدير</option>
+                <option>بيع أو شراء سيارة</option>
+                <option>كراء سيارة</option>
+                <option>خدمات عقارية</option>
+                <option>فيزا وتأشيرة</option>
+                <option>دراسة مشروع</option>
+                <option>وساطة تجارية أو مالية</option>
+                <option>خدمات إلكترونية</option>
+                <option>شراكة أو تمويل</option>
+                <option>خدمة أخرى</option>
+              </select>
+            </div>
+
+            <div class="form-group full">
+              <label for="message">تفاصيل الطلب *</label>
+              <textarea
+                id="message"
+                required
+                placeholder="اكتب تفاصيل طلبك هنا..."
+              ></textarea>
+            </div>
+
+            <div class="form-group full">
+              <button type="submit" class="btn btn-primary">
+                إرسال الطلب
+              </button>
+
+              <div class="form-message" id="formMessage">
+                تم استلام طلبك بنجاح. سنتواصل معك قريبًا.
+              </div>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta">
+      <div class="container">
+        <h2>هل لديك فكرة أو طلب؟</h2>
+        <p>تحدث معنا اليوم ودعنا نساعدك في إيجاد الطريق المناسب.</p>
+        <a href="#request" class="btn">احجز استشارتك الآن</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+
+        <div>
+          <h3>Grand Axis Business</h3>
+          <p>
+            حلول أعمال متكاملة في الاستيراد، السيارات، العقارات،
+            التأشيرات، المشاريع والشراكات الدولية.
+          </p>
+        </div>
+
+        <div>
+          <h3>روابط سريعة</h3>
+          <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#services">خدماتنا</a></li>
+            <li><a href="#about">من نحن</a></li>
+            <li><a href="#request">اطلب خدمة</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>تواصل معنا</h3>
+          <ul>
+            <li><a href="tel:+213000000000">الهاتف: +213 00 00 00 00</a></li>
+            <li>
+              <a href="mailto:contact@grandaxisbusiness.com">
+                البريد الإلكتروني
+              </a>
+            </li>
+            <li><a href="#">فيسبوك</a></li>
+            <li><a href="#">إنستغرام</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="copyright">
+        © 2026 Grand Axis Business. جميع الحقوق محفوظة.
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp -->
+  <a
+    class="whatsapp"
+    href="https://wa.me/213000000000"
+    target="_blank"
+    aria-label="تواصل معنا عبر واتساب"
+  >
+    ☎
+  </a>
+
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+    const requestForm = document.getElementById("requestForm");
+    const formMessage = document.getElementById("formMessage");
+
+    menuBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+      });
+    });
+
+    requestForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      formMessage.style.display = "block";
+      requestForm.reset();
+
+      setTimeout(() => {
+        formMessage.style.display = "none";
+      }, 6000);
+    });
+  </script>
+
+</body>
+</html>
